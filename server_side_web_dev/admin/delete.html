@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Delete User</title>
+        <h1>Delete a User</h1>
+    </head>
+    <body>
+        <form action="/delete" method="POST">
+        <div>
+            <p>Please enter the name of a user you want to remove from the system</p>
+            <P>WARNING DONT DELETE PEOPLE WITH ADMIN ROLE ESPECIALLY IF ITS ONLY ONE ADMIN ON THE SYSTEM!!!!</P>
+            <label>Username: </label>
+            <input required type="text" placeholder="Enter Username" name="username"/>
+        </div>
+        <div>
+            <button type="submit">Delete Username</button>
+            <div><a href="/admin">Admin Tools</a></div>
+            <div><a href="/logout">Logout</a></div>
+            <p>Maksims Kazoha || R00188979</p>
+        </div>
+        </form>
+    </body>
+</html>

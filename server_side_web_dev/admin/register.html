@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Admin Register Tool</title>
+        
+    </head>
+    <body>
+        <form action="/register" method="POST">
+            <div>
+                <h1>User Registration System</h1>
+            </div>
+            <p>Here you will be adding users to the database, this is an admin tool!</p>
+            <p>User's that are not registered into the system are guests and cant access certian pages.</p>
+            <p>As an admin you have maximum powers and you can access all pages</p>
+            <p>As an ordinary user you can access home, help, login, about and contact pages</p>
+            <p>As a guest you can only access home, help, contact and login pages.</p>
+            <p>When registering a user their cant be 2 of the same users in the server <br>
+            so when enter the details please make sure that they are correct.</p>
+            <div>
+                <label>Username: </label>
+                <input required type="text" placeholder="Enter Username" name="username"/>
+            </div>
+            <div>
+                <label>Type of user</label>
+                <input required type="text" placeholder="ordinary / admin" name="userType"/>
+            </div>
+            <div>
+                <label>Password: </label>
+                <input required type="password" placeholder="Enter Password" name="password"/>
+            </div>
+            <div>
+                <button type="submit">Register User</button>
+            </div>
+            <div><a href="/admin">Admin tools</a></div>
+            <div><a href="/help">Help</a></div>
+            <div><a href="/about">About Us</a></div>
+            <div><a href="/contact">Contact Us</a></div>
+            <div><a href="/logout">Logout</a></div>
+            <p>Maksims Kazoha || R00188979</p>
+        </form>
+    </body>
+</html>
